@@ -1,5 +1,13 @@
 /* Header */
 
+body{
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+footer{
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
 .top-header {
   margin-top: 10rem;
   text-align: center;
@@ -51,7 +59,9 @@
 /* computer-section */
 
 .computer-section {
-  display: flex;
+  margin: 0 auto;  
+  width: 70%;
+  display: flex;  
   gap: 7rem;
   align-items: center;
   justify-content: center;
@@ -59,12 +69,10 @@
   /* justify-content:space-evenly; */
 }
 
-.computer-img {
-}
-
 .computer-feature {
   margin-bottom: 4rem;
-  margin-right: 23rem;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -80,10 +88,6 @@
   color: rgb(164, 164, 155);
 }
 
-.icloud-sync {
-  /* margin-top: 5rem; */
-}
-
 /* clipboard-anywhere */
 
 .clipboard-anywhere {
@@ -91,12 +95,9 @@
   text-align: center;
 }
 
-.clipboard-anywhere-top {
-  /* text-align: center; */
-}
-
 .clip-title {
   font-size: 2.5rem;
+  font-weight: 600;
 }
 
 .clip-desc {
@@ -108,14 +109,11 @@
   margin-top: 10rem;
 }
 
-.supercharge-workflow {
-  /* margin-top: 5rem; */
-}
-
 .supercharge-top {
   text-align: center;
   /* display: flex; */
   font-size: 3rem;
+  font-weight: 600;
   /* background-color: green; */
 }
 
@@ -123,6 +121,7 @@
   margin-top: -2rem;
   color: rgb(164, 164, 155);
   font-size: 25px;
+  
 }
 
 /* three-feature */
@@ -139,6 +138,7 @@
 
 .three-title {
   font-size: 2rem;
+  font-weight: 600;
 }
 
 .three-desc {
@@ -172,4 +172,112 @@
 .ios-mac-os p {
   font-size: 23px;
   color: rgb(164, 164, 155);
+}
+
+/* footer class */
+
+.down-footer {
+  padding: 2rem;
+  background-color: aliceblue;
+  margin-top: 300px;
+  display: flex;
+  justify-content: space-around;
+  
+  /* justify-items: start; */
+}
+
+.down-footer-svg{
+  margin-top: -15px;
+}
+
+.svfimag {
+  width: 60px;
+  height: 60px;
+  margin-top: 80px;
+  margin-left: 100px;
+}
+
+.s-icon {
+  height: 25px;
+  width: 25;
+}
+.f-content{
+  display: flex;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+}
+.f-child{
+  padding: 50px;
+}
+.social-icon {
+  display: flex;
+  /* margin-left: auto; */
+}
+
+.s-icon{
+  padding: 20px;
+  margin-top: 50px;
+}
+/* Media Query */
+
+@media (max-width: 650px) {
+  .down-footer{
+    flex-direction: column;
+
+  }
+  .down-footer-svg{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .svfimag{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .f-child{
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* margin: 0  auto; */
+  }
+  .social-icon{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .s-icon{
+    padding: 10px
+  }
+  .f-content{
+    flex-direction: column;
+    gap: -10px !important;
+    margin: 0 auto;
+  }
+  .btn-top {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .top-btn-2 {
+    margin: 0;
+    margin-top: 30px;
+  }
+  .computer-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .computer-section img {
+    width: 300px;
+  }
+  .clip-img {
+    width: 300px;
+  }
+  .three-feature {
+    flex-direction: column;
+  }
+  .logos {
+    flex-direction: column;
+  }
+  .logos img {
+    margin-top: 30px;
+  }
 }
