@@ -2,6 +2,8 @@
 
 body{
   font-family: 'Bai Jamjuree', sans-serif;
+  /* margin: 0px; */
+  /* width: 100vw; */
 }
 
 footer{
@@ -221,7 +223,18 @@ footer{
 /* Media Query */
 
 @media (max-width: 650px) {
+
+  .top-header {
+    margin-top: 5rem;
+    text-align: center;
+  }
+  
+  .head-desc-2 {
+    margin-top: 5rem;
+  }
+
   .down-footer{
+    margin-top: 5rem;
     flex-direction: column;
 
   }
@@ -238,46 +251,83 @@ footer{
     padding: 10px;
     display: flex;
     flex-direction: column;
+    margin-top: -18px;
     /* justify-content: center; */
     /* margin: 0  auto; */
   }
+
   .social-icon{
     margin-left: auto;
     margin-right: auto;
   }
+
   .s-icon{
     padding: 10px
   }
+
   .f-content{
     flex-direction: column;
     gap: -10px !important;
     margin: 0 auto;
   }
+
   .btn-top {
     flex-direction: column;
     justify-content: space-around;
   }
+
   .top-btn-2 {
     margin: 0;
     margin-top: 30px;
   }
+
   .computer-section {
     flex-direction: column;
     text-align: center;
   }
+
+  .computer-feature{
+    margin-top: -5rem;
+  }
+
   .computer-section img {
     width: 300px;
   }
+
   .clip-img {
     width: 300px;
+    margin-top: 5rem;
+  }
+
+  .clipboard-anywhere{
+    margin-top: -4rem;
   }
   .three-feature {
     flex-direction: column;
+    margin-top: 3rem;
+    gap: 1rem;
   }
+
+  .ios-mac-os{
+    margin-top: 5rem;
+  }
+
   .logos {
+    margin-top: 1rem;
     flex-direction: column;
   }
+
   .logos img {
     margin-top: 30px;
   }
+
 }
+
+
+
+
+
+
+
+
+
